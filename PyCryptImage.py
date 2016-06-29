@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Auteur : Alexandreou
 print("----------------------------------------------------------------------")
-print("PyCryptImage v1.0")
+print("PyCryptImage v1.1")
 print("----------------------------------------------------------------------")
 
 from tkinter import *
@@ -189,8 +189,11 @@ def attente(a):
 		command_crypter()
 	else:
 		command_decrypter()
-	att = 0
-	attente(a)
+	if att == 3:
+		pass
+	else:
+		att = 0
+		attente(a)
 
 def a_propos():
 	fenetre2 = Tk()
@@ -223,7 +226,7 @@ def command_decrypter_inter():
 
 def main(a):
 	fenetre = Tk()
-	fenetre.title("PyCryptImage v1.0")
+	fenetre.title("PyCryptImage v1.1")
 	texte = StringVar()
 	mot = StringVar()
 	plus = IntVar()
@@ -262,6 +265,8 @@ def main(a):
 	et_11 = Label(fenetre, text = "Mot-clé :")
 	et_11.grid(row=4, column=0, columnspan=5)
 	fenetre.mainloop()
+	global att
+	att = 3
 
 thread1 = threading.Thread(None, main, None, "a")
 thread2 = threading.Thread(None, attente, None, "a")
@@ -274,6 +279,11 @@ thread2.join()
 
 """
 Changelog :
+
+v1.1 :
+Correction temporaire d'un bug de fermeture 
+(le 2eme thread ne se fermai pas, maintenant, 
+il plante lorsque l'on quitte le logiciel, et donc se ferme).
 
 v1.0 :
 Ajout d'un pourcentage avec le module threading.
