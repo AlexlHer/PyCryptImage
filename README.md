@@ -9,11 +9,17 @@ Projet qui consiste à crypter une image avec un mot-clé.
 ### v1.0 :
 
 Ajout d'un pourcentage avec le module threading.
+
 Outil de cryptage amélioré.
+
 Rapidité accru.
+
 Ajout du support du jpeg.
+
 Interface complétée.
+
 Erreurs corrigées.
+
 Programme renommé en PyCryptImage ou PyCI.
 
 ### v0.5 (Beta) :
