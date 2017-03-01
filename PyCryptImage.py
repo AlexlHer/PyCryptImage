@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Auteur : Alexandreou
+# Auteur : Alexandre l'Heritier
 print("----------------------------------------------------------------------")
 print("PyCryptImage v1.1")
 print("----------------------------------------------------------------------")
@@ -199,7 +199,7 @@ def a_propos():
 	fenetre2 = Tk()
 	fenetre2.title("A propos")
 	Label(fenetre2, text = "PyCryptImage", font=('Arial', 20, 'italic', 'bold')).grid(row=0, column=0, columnspan=10)
-	Label(fenetre2, text = "Par Alexandreou").grid(row=1, column=0, columnspan=10)
+	Label(fenetre2, text = "Par Alexandre l'Heritier").grid(row=1, column=0, columnspan=10)
 
 def aide():
 	fenetre1 = Tk()
